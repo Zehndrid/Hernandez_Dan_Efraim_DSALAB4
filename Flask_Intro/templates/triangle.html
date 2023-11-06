@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triangle Area Calculation</title>
+</head>
+<body>
+    <h1>Calculate the Area of a Triangle</h1>
+    <form method="post" action="/triangle">
+        <label for="base">Enter the base of the triangle:</label>
+        <input type="text" id="base" name="base" required>
+        <br>
+        <label for="height">Enter the height of the triangle:</label>
+        <input type="text" id="height" name="height" required>
+        <br>
+        <input type="submit" value="Calculate Area">
+    </form>
+    {% if area is not none %}
+        <p>The area of the triangle with a base of {{ base }} and a height of {{ height }} is {{ area }} square units.</p>
+    {% endif %}
+</body>
+</html>

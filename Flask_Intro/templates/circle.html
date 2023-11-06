@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area of a Circle</title>
+</head>
+<body>
+    <h1>Welcome to Area of a Circle Page</h1>
+    <form method="post" action="/circle">
+        <label for="radius">Enter the radius of the circle:</label>
+        <input type="text" name="radius" id="radius" required>
+        <input type="submit" value="Calculate Area">
+    </form>
+    {% if area %}
+        <p>The area of the circle with a radius of {{ radius }} is {{ area }} square units.</p>
+    {% endif %}
+</body>
+</html>
